@@ -4,48 +4,177 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="shortcut icon" href="assets/img/" type="img/icon">
+    <title>Integrador JS</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" /> -->
+    <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    </style> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@1,300&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/2a423d9b71.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-<header>
-    <div class="logo">
-        <img src="" alt="">
+    <main>
+        
+        <header>
+            <div class="header-container">
+
+                <div class="logo">
+                    <img src="assets/img/Creative space.png" alt="">
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#inicio">INICIO</a></li>
+                        <li><a href="#obras">OBRAS</a></li>
+                        <li><a href="#contacto">CONTACTO</a></li>
+                  
+                    </ul>
+                </nav>
+                <!-- <input type="checkbox">
+                <div class="login">
+                <form action="" method="get">
+                 <i class="fa-light fa-user"></i>
+                <p>login</p>
+                <input type="text">
+                <input type="text">
+               <button>login</button>
+                 </form>
+                  <a href="">no tienes cuenta?registrate</a>
+                 <a href=""></a>
+                </div>
+                <div class="singup">
+                <a href=""></a>
+                <a href=""></a>
+                </div> -->
+                <div class="carrito">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="favorito">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <label for="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <input type="checkbox" id="menu">
+                <label for="login">
+                    <i class="fa-solid fa-user"></i>
+                </label>
+            </div>
+        </header>
+          <div id="overlay"></div>
+
+        <!-- CARRITO -->
+        <div id="cartList" class="none">
+            <div class="content_btn_check">
+                <button class="check-out">x</button>
+            </div>
+            <h2>Tus Productos</h2>
+            <div class="content_cart_products">
+                <!-- <div class="cart_products">
+                        <div class="product_img">
+                            <img src=${img} alt=${name} />
+                        </div>
+                        <div class="product_text">
+                          <p class="product_name">${name}</p>
+                          <p class="opacity">${descr}</p>
+                          <p class="product_price">$ ${price}</p>
+                        </div>
+                        <div class="product_button">
+                          <button class="minus">
+                            <p class="down" data-id=${id}>-</p>
+                          </button>
+                            <p class="quantity">${quantity}</p>
+                          <button>
+                            <p class="up" data-id=${id}>+</p>
+                          </button>
+                        </div>
+                    </div> -->
+            </div>
+            <div class="total_price_content">
+                <div class="subT">
+                    <p>Subtotal:</p>
+                    <p>$ 0</p>
+                </div>
+                <div class="subT">
+                    <p>Envío:</p>
+                    <p>Gratis</p>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="total_price_content">
+                <div class="subT">
+                    <h4>Total:</h4>
+                    <h4 id="total">$ 0</h4>
+                </div>
+            </div>
+            <div class="btn_cart_buy">
+                <button class="buy_btn">COMPRAR</button>
+                <p class="opacity" id="viewMore">Ver más productos</p>
+            </div>
+        </div>
+    <section class="hero" id="inicio">
+    <div class="hero-conteiner">
+       
+        <div class="text-hero">
+            <h1>dejese inspirar</h1>
+            <p>con nuestras piezas de arte</p>
+            <button>nuestras obras</button>
+        </div>
+
     </div>
-    <div class="login">
-        <a href=""></a>
-        <a href=""></a>
+</section>
+<section class="sec-estilo">
+   <div class="estilo-container">
+    <div class="stile">
+        <img src="assets/img/ (11).jpg" alt="" class="stile-img">
+        <p>urbano</p>
     </div>
-    <div class="carrito">
-        <i class="fa-solid fa-cart-shopping"></i>
+    <div class="stile">
+        <img src="assets/img/ (8).jpg" alt="" class="stile-img">
+        <p>paisajismo</p>
     </div>
-    <nav>
-        <ul>
-            <li>inicio</li>
-            <li>contacto</li>
-            <li>productos</li>
-            <li></li>
-        </ul>
-    </nav>
-    <label for="">
-        <i></i>
-    </label>
-    <input type="checkbox">
-</header>
-<section class="hero">
-    <div class="text-hero">
-        <h1></h1>
-        <p></p>
-        <button></button>
+    <div class="stile">
+        <img src="assets/img/ (10).jpg" alt="" class="stile-img">
+        <p>paisajismo</p>
     </div>
-    <div class="img-hero">
-        <img src="" alt="">
+    <div class="stile">
+        <img src="assets/img/ (9).jpg" alt="" class="stile-img">
+        <p>paisajismo</p>
     </div>
-</section> 
-<section class="section-produc">
-    <p></p>
-    <div class="conteiner-product">
+   
+   </div>
+</section>
+<section class="filter-category">
+    <div class="category">
+        <div class="card-category hov active" data-category="popular">
+            <p class="text-two">Populares</p>
+        </div>
+        <div class="card-category" data-category="abstraccion">
+            <p class="text-two">Abstraccion</p>
+        </div>
+        <div class="card-category" data-category="paisajismo">
+            <p class="text-two">paisajismo</p>
+        </div>
+        <div class="card-category" data-category="retrato">
+            <p class="text-two">retrato</p>
+        </div>
+        <div class="card-category" data-category="urbano">
+            <p class="text-two">urbano</p>
+        </div>
+    </div>
+</section>
+
+<section class="sec-produc" id="obras">
+    <div class="container-produc">
         <div class="produc">
-           <img src="" alt="">
+           <div class="cont-img">
+               <img src="assets/img/ (8).jpg" alt="" class="produc-img">
+            </div>
+
            <div class="text-produc">
                <p></p>
                <p>$500</p>
@@ -53,7 +182,23 @@
            </div> 
         </div>
         <div class="produc">
-           <img src="" alt="">
+            <img src="assets/img/ (8).jpg" alt="" class="produc-img">
+           <div class="text-produc">
+               <p></p>
+               <p>$500</p>
+               <button>comprar</button>
+            </div> 
+        </div>
+        <div class="produc">
+            <img src="assets/img/ (8).jpg" alt="" class="produc-img">
+            <div class="text-produc">
+                <p></p>
+                <p>$500</p>
+                <button>comprar</button>
+            </div> 
+        </div>
+        <div class="produc">
+            <img src="assets/img/ (8).jpg" alt="" class="produc-img">
            <div class="text-produc">
                <p></p>
                <p>$500</p>
@@ -61,40 +206,24 @@
            </div> 
         </div>
         <div class="produc">
-           <img src="" alt="">
+            <img src="assets/img/ (8).jpg" alt="" class="produc-img">
            <div class="text-produc">
                <p></p>
+               <p>$500</p>
+               <button>comprar</button>
+            </div> 
+        </div>
+        <div class="produc">
+            <img src="assets/img/ (8).jpg" alt="" class="produc-img">
+            <div class="text-produc">
+                <p></p>
                <p>$500</p>
                <button>comprar</button>
            </div> 
         </div>
         <div class="produc">
-           <img src="" alt="">
-           <div class="text-produc">
-               <p></p>
-               <p>$500</p>
-               <button>comprar</button>
-           </div> 
-        </div>
-        <div class="produc">
-           <img src="" alt="">
-           <div class="text-produc">
-               <p></p>
-               <p>$500</p>
-               <button>comprar</button>
-           </div> 
-        </div>
-        <div class="produc">
-           <img src="" alt="">
-           <div class="text-produc">
-               <p></p>
-               <p>$500</p>
-               <button>comprar</button>
-           </div> 
-        </div>
-        <div class="produc">
-           <img src="" alt="">
-           <div class="text-produc">
+            <img src="assets/img/ (8).jpg" alt="" class="produc-img">
+            <div class="text-produc">
                <p></p>
                <p>$500</p>
                <button>comprar</button>
@@ -103,12 +232,128 @@
     </div>
     <button>ver mas productos</button>
 </section>
+<section class="sec-cread">
+    <p>conoce a nuestros aristas</p>
+    <div class="conten-arts">
+
+        <div class="arts-grid">
+            <div class="craed">
+                <div class="img-cread">
+                   <img src="assets/img/artista (1).jpg" alt="" class="art-img">
+                </div>
+                <dvi class="bio-cread">
+                    <p>jose garcia</p>
+                    <p>pintor de urbanismo</p>
+                    <div class="art-img">
+                        <img src="assets/img/ (10).jpg" alt="">
+                    </div>
+                </dvi>
+            </div>
+        </div>
+        <div class="arts-grid">
+            <div class="craed">
+                <div class="img-cread">
+                   <img src="assets/img/artista (1).jpg" alt="" class="art-img">
+                </div>
+                <dvi class="bio-cread">
+                    <p>jose garcia</p>
+                    <p>pintor de urbanismo</p>
+                    <div class="art-img">
+                        <img src="assets/img/ (10).jpg" alt="">
+                    </div>
+                </dvi>
+            </div>
+        </div>
+        <div class="arts-grid">
+            <div class="craed">
+                <div class="img-cread">
+                   <img src="assets/img/artista (1).jpg" alt="" class="art-img">
+                </div>
+                <dvi class="bio-cread">
+                    <p>jose garcia</p>
+                    <p>pintor de urbanismo</p>
+                    <div class="art-img">
+                        <img src="assets/img/ (10).jpg" alt="">
+                    </div>
+                </dvi>
+            </div>
+        </div>
+        
+    </div>
+</div>
+    <button>ver mas artistas</button>
+</section>
+
+<section class="nove" id="contacto">
+    <div class="container-nove">
+        
+        <div class="form-container">
+            <div class="form-text">
+                <h2>novedades</h2>
+                <p>Recibi en tu E-mail las mejores novedades, descuentos, ofertas y cursos.</p>
+            </div>
+            
+            <form action="">
+                <input type="text" name="name" placeholder="NAME">
+                <label for="name"></label>
+                <input type="text" name="E-MAIL" placeholder="E-MAIL">
+                <label for="email"></label>
+            </form>
+            <button class="button-form">INSCRIBIRSE</button>
+        </div>
+        <div class="maps-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.106839035672!2d-58.472138699999995!3d-34.62674030000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9cc1cdd1127%3A0xc09edcffa2cea2b!2sAvellaneda!5e0!3m2!1ses-419!2sar!4v1667586911952!5m2!1ses-419!2sar" width="300" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h4>Nos encontramos en</h4>
+            <h3>Avellaneda, Provincia de Buenos Aires.</h3>
+        </div>
+        
+    </section>
+<section class="sect-card">
+    <div class="icon">
+        <i class="fa-solid fa-truck-arrow-right"></i>
+        <p>Entrega internacional</p>
+        <p>por transportistas especializados.</p>
+    </div>
+    <div class="icon">
+        <i class="fa-regular fa-hand-holding-box"></i>
+        <p>Devoluciones gratuitas</p>
+        <p>dentro de 14 días</p>
+    </div>
+    <div class="icon">
+        
+        <i class="fa-solid fa-credit-card"></i>
+        <p>Pagos seguros</p>
+        <p>con tarjeta o transferencia.</p>
+    </div>
+        
+</section>
 <footer>
-    <p></p>
-    <p></p>
-    <i></i>
-    <i></i>
+    <div class="footer-container">
+        <div class="footer-logo">
+                <img src="assets/img/Creative space.jpg" alt="">
+        </div>
+        <div class="footer-text">
+            <p>Contactános</p>
+            <p>  +54 1138099083</p>
+            <p>MoonandStar@gmail.com</p>
+            <p>Visita nuestro Blog!</p>
+        </div>
+        <div class="footer-icon">
+
+            <div class="icon-social-container">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+            <p>
+                © Copyright - 2022</h4>
+            </p>
+        </div>
+        
+    </div>
 </footer>
-    
+<script src="./assets/data.js"></script>
+<script src="./assets/main.js"></script> 
+</main>  
 </body>
 </html>
